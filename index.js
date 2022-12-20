@@ -101,7 +101,7 @@ for await (const response of octokit.paginate.iterator(
 
 for (const repo of reposToInstall) {
   console.log(`Installing to ${repo.name}...`)
-  octokit.rest.apps.addRepoToInstallationForAuthenticatedUser({
+  await octokit.rest.apps.addRepoToInstallationForAuthenticatedUser({
     installation_id: appInstall.id,
     repository_id: repo.id
   })
