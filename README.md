@@ -32,7 +32,7 @@ Run the script. It will request a personal access token the first time it is run
 
 ```console
 node index.js
-What org are we activating repost for the Socket app?
+Org name?
 SocketDev
 What repo topic should we activate Socket on?
 socket-app-install

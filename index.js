@@ -36,7 +36,7 @@ const octokit = new Octokit({
   }
 })
 
-const org = await rl.question('What org are we activating repost for the Socket app?\n')
+const org = await rl.question('Org Name?\n')
 const installTopic = await rl.question('What repo topic should we activate Socket on?\n')
 
 rl.close()
