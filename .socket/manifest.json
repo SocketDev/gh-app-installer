@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/dns-sync@0.1.0": {
+      "uuid": "4c767802-f9d8-4f49-857e-c0c47cbefcc3",
+      "exportedAt": "Wed, 22 Oct 2025 23:37:47 GMT",
+      "files": {
+        "package/lib/dns-sync.js": {
+          "beforeHash": "5332205ceffb6d156087389d87831491cb44c9bd2ac319ef9c4f9f25c7f12b8e",
+          "afterHash": "99cecc13d4d0ab41b425f709d9cf0ed589f53634ca895f026ebff84a2e62593e"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-jcw8-r9xm-32c6": {
+          "cves": [
+            "CVE-2017-16100"
+          ],
+          "summary": "Command Injection in dns-sync",
+          "severity": "CRITICAL",
+          "description": "Affected versions of `dns-sync` have an arbitrary command execution vulnerability in the `resolve()` method. \n\n\n\n## Recommendation\n\n- Use an alternative dns resolver\n- Do not allow untrusted input into `dns-sync.resolve()`"
+        }
+      },
+      "description": "Fixed",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
